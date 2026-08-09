@@ -6,6 +6,7 @@ try:
     browser = webdriver.Chrome()
     browser.get(link)
     browser.find_element(By.ID, "button")
+    browser.implicitly_wait(5)
 
 finally:
     browser.quit()
